@@ -9,11 +9,11 @@ import (
 )
 
 const (
-	serverSql    = "192.168.1.198\\SQLEXPRESS"
+	serverSql    = "192.168.1.1\\SQLEXPRESS"
 	portSql      = 1443
-	userSql      = "consentimientos"
-	passwordSql  = "patientClinicH.21*"
-	databaseName = "HOSVITAL"
+	userSql      = "user"
+	passwordSql  = "password"
+	databaseName = "databasename"
 )
 
 func sqlServerGetConnection() *sql.DB {
