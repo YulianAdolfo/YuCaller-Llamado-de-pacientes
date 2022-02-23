@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles-doctor-app/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" href="/main-app-icon" type="image/icon type">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>YuCaller | Dashboard</title>
+</head>
+<body>
+    <div class="point-state" id="point-state" style="display: none;"><i class="fas"></i></div>
+    <div class="button-cancel" id="button-cancel" style="display: none;"><p>Cancelar<i class="fas fa-phone-slash"></i></p></div>
+    <form class="form-app" id="form-app">
+        <header></header>
+        <h3>Ingrese su usuario Hosvital</h3>
+        <input type="text" name="txt-user-hvt" id="txt-user-hvt">
+        <button id="button-login">Ingresar</button>
+    </form>
+    <p style="font-size:10px;font-weight:bold;position:absolute; bottom:5px;font-style:italic;left:5px;" id="bonus">Diseñado y programado por Yulian Adolfo Rojas. Agradecimentos a Ana Victoria Gutierrez y Carlos Andrés Velásquez.</p>
+    <script src="/code-doctor-app/panelDoctor.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+body, * {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-image: url('/images-1/logo-blue.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#header-title {
+    text-align: center;   
+    background-color: #00adef;
+    color: white;
+}
+#header-title h1, h2 {
+    margin: 0;
+    padding: 5px;
+}
+#recording-button {
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#recording-button button{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    border: none;
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    cursor: pointer;
+}
+#container-mic {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-mic .mic {
+    font-size: 100px;
+    color: white;
+}
+.state-micro-talk {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    padding-top: 2px;
+    color: white;
+    font-size: 20px;
+}
+.state-micro-1 {
+    background-color: #ffa600;
+}
+.state-micro-2 {
+    background-color: #6eb6ff;
+}
+.state-connection-server {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 2px;
+}
+.state {
+    width: 25%;
+    float: left;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #16db00;   
+}
+.message {
+    width: 74%;
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+}
+.control-header {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.option-micro-1 {
+    margin-bottom: 10px;
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.option-micro-2 {
+    margin-top: 10px;
+    border: 1px solid #cbccca
+}
+.option-micro-2, .option-micro-1 {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+
+}
+.state-connection {
+    width: 20%;
+}
+.point-state {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+.state-microphone {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6363;
+    color: white;
+}
+.state-time {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+.state-connection, .state-microphone, .state-time {
+    height: 100%;
+    float: left;
+}
+.button-cancel, .placename {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.button-cancel {
+    display: flex;
+    align-items: center;
+}
+.button-cancel p{
+    background-color: red;
+    color: white;
+    padding:5px;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+}
+.placename {
+    display: flex;
+    align-items: center;
+}
+.placename input {
+    width: 90%;    
+    height: 25px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    font-weight: bold;
+}
+/*-------------------------------------*/
+.dashboard {
+    width: 1310px;
+    height: 88vh;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -46%);
+    /*box-shadow: -4px 10px 18px #888888;*/
+    border: 1px solid #ddd;
+}
+.container-list {
+    width: 98%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.container-list::-webkit-scrollbar {
+    width: 11px;
+}
+.container-list::-webkit-scrollbar-track {
+    background-color: #f1f1ff;
+}
+.container-list::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 185, 185);
+}
+.container-list-called {
+    width: 2%;
+    height: 100%;
+    background-color: #00adef;
+}
+.header-app {
+    width: 1300px;
+    height: 50px;
+    display: block;
+    margin:  0 auto;
+    margin-top: 2px;
+    background-color: #00adef;
+    padding: 5px;
+    position: relative;
+    /*box-shadow: 2px 0px 10px #888888;*/
+}
+.image-app {
+    width: 150px;
+    height: 100%;
+    background-image: url('/images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+.header-app p {
+    float: left;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.box-state-mic {
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    right: 300px;
+    top: 0;
+    font-size: 10px;
+}
+.box-state-mic p {
+    font-size: 15px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 22px;
+
+}
+.box-state-mic p:nth-of-type(2) {
+    background-color: orange; /*rgb(3, 146, 3)*/
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 16px;
+    margin-left: 0px;
+}
+.consulting-room {
+    position: absolute;
+    right: 120px;
+}
+.refresh-button {
+    float: right;
+}
+.sign-out-button {
+    float: right;
+}
+.sign-out-button, .refresh-button {
+    font-size: 23px;
+    margin-top: 14px;
+    margin-left: 6px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+.sign-out-button:hover, .refresh-button:hover, .button-left:hover {
+    color: rgb(235, 235, 235);
+}
+.table-patients {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+.table-patients tr, td, th {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+.table-patients th {
+    background-color: rgb(30, 219, 5);
+    position: sticky;
+    top: -1px;
+    color: white;
+}
+.table-patients td {
+    text-align: center;
+    padding: 5px;
+}
+.table-patients tr:hover {
+    box-shadow: 4px 5px 18px #888888;
+}
+.button-left {
+    font-size: 30px;
+    display: block;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+}
+.microphone-app {
+    background-color:orange;
+    color: white;
+    padding:7px;
+    border-radius:5px;
+    cursor: pointer;
+}
+.microphone-app i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+.form-app {
+    width: 400px;
+    height: 300px;
+    background-color: #00adef;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: -1px 5px 8px 5px #888888;
+}
+.form-app header {
+    width: 100%;
+    height: 100px;
+    background-image: url('/images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.form-app h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:10px;
+    color: white;
+}
+.form-app input {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+    height: 25px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.form-app button {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 3px;
+    background-color: rgb(30, 219, 5);
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.form-app button:hover {
+    background-color: rgb(26, 199, 4);   
+}

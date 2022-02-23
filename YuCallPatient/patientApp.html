@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/styles-patient-app/patient.css">
+<!--     <link rel="stylesheet" href="../public/styles-app/patient.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <title>Pacientes</title>
+</head>
+<body>
+    <div class="container-calling-app">
+        <div class="container-details">
+            <div class="panel-patient" id="panel-patient"> 
+                <div class="waiting-panel" id="waiting-panel">
+                    <header><div class="image-logo-app"></div>Corporación IPS Universitaria de Caldas | Llamado de pacientes a consulta</header>
+                    <h1 class="do-not-show"><i class="fas fa-user-clock"></i></h1>
+                    <div class="container-waiting-time">
+                        <p class="timer"><span id="hour-span">00</span><span>:</span><span id="minute-span">00</span><span id="state-pm-am"> ...</span></p>
+                        <p class="date" id="date">----------------</p>
+                        <p class="location">Manizales Caldas - Colombia</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container-list-already-called">
+            <div class="card-list-patients" id="card-list-patients">
+                <header><i class="fas fa-users"></i>Pacientes Llamados</header>
+            </div>
+        </div>
+    </div>
+    <script src="/code-patient-app/panelPatient.js"></script>
+<!--     <script src="../public/code-app/panelPatient.js"></script> -->
+</body>
+</html>

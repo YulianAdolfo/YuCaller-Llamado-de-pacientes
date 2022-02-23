@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+}
+* {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.container-calling-app {
+  width: 100%;
+  height: 100vh;
+  background-color: #00adef;
+}
+.container-details {
+  width: 70%;
+  background-color: #00adef;
+}
+.container-list-already-called {
+  width: 30%;
+}
+.container-details,
+.container-list-already-called {
+  float: left;
+  height: 100vh;
+}
+.card-list-patients,
+.panel-patient {
+  width: 95%;
+  height: 96%;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 12px;
+  border-radius: 5px;
+}
+.panel-patient {
+  width: 98%;
+  position: relative;
+  text-align: center;
+  overflow-y: hidden;
+}
+.panel-patient h1 {
+  margin: 0;
+  font-size: 80px;
+  position: absolute;
+  top: 90px;
+}
+.panel-patient h1,
+h2,
+h3 {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.panel-patient h2 {
+  top: 380px;
+  font-size: 60px;
+}
+.panel-patient h3 {
+  bottom: 20px;
+  font-size: 30px;
+}
+.card-list-patients header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: rgb(30, 219, 5);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 2px;
+}
+.card-list-patients header i {
+  margin-right: 5px;
+}
+.card-list-patients {
+  overflow-y: scroll;
+  position: relative;
+}
+.card-list-patients header {
+  position: sticky;
+  top: -1px;
+}
+.card-list-patients::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* cards patients */
+.patient-name,
+.consulting-room-name,
+.appt-doctor {
+  width: 98%;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.round-image-genre {
+  width: 180px;
+  height: 180px;
+  background-color: rgb(30, 219, 5);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 2px 1px 2px #ddd;
+}
+.round-image-genre img {
+  width: 150px;
+  height: 150px;
+}
+.label-name {
+  width: 90%;
+  height: 150px;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 2px 2px 3px #ddd;
+}
+.round-image-genre,
+.label-name {
+  float: left;
+}
+.consulting-room-name {
+  top: 260px;
+}
+.round-right {
+  float: right;
+  width: 150px;
+  height: 150px;
+}
+.round-right img {
+  width: 100px;
+  height: 100px;
+  margin-top: -10px;
+}
+.container-name {
+  width: 87%;
+  height: 100%;
+  margin-left: 100px;
+  font-size: 47px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  text-shadow: 2px 2px 8px grey;
+}
+.animation-for-name {
+  animation: blikigTextName 0.5s ease-in-out infinite;
+}
+.label-name-right {
+  float: left;
+  left: 10px;
+  height: 100px;
+  width: 90%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.appt-doctor {
+  top: 450px;
+}
+.label-name-left {
+  height: 60px;
+  width: 95%;
+  left: 20px;
+}
+.round-left {
+  width: 110px;
+  height: 110px;
+}
+.round-left img {
+  width: 70px;
+  height: 80px;
+  margin-top: 10px;
+}
+.con-rom-name {
+  font-size: 32px;
+}
+.doctor-name {
+  font-size: 30px;
+}
+.con-rom-name,
+.doctor-name {
+  text-shadow: 2px 2px 8px grey;
+}
+.label-name span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.card-patient {
+  width: 98%;
+  height: 50px;
+  background-color: #00adef;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.card-patient img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.card-patient span {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 5px;
+  font-size: 15px;
+  color: white;
+}
+.card-patient span:nth-of-type(2) {
+  float: right;
+  margin-right: 5px;
+}
+.do-not-show {
+  display: none;
+}
+.waiting-panel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.waiting-panel header {
+  width: 100%;
+  height: auto;
+  color: black;
+  background-color: rgb(30, 219, 5);
+  font-size: 18px;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  position: relative;
+}
+.image-logo-app {
+  width: 100px;
+  height: 40px;
+  background-image: url("../images/logo-white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container-waiting-time {
+  width: 80%;
+  height: 300px;
+  background-color: #00adef;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.waiting-panel h1 {
+  font-size: 35px;
+}
+.waiting-panel p {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.date {
+  font-size: 25px;
+}
+.timer {
+  font-size: 100px;
+  margin-top: 50px;
+}
+.location {
+  font-size: 20px;
+}
+.patient-name-animation {
+  top: 10%;
+}
+.consulting-room-name-animation {
+  top: 45%;
+}
+.appt-doctor-animation {
+  top: 75%;
+}
+.opacity-timer {
+  opacity: 0;
+  transition: 0.2s linear;
+}
+.transition-delete-card {
+  transform: translateX(110%);
+  transition: 1s linear;
+}
+
+@keyframes blikigTextName {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
